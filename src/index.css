@@ -1,0 +1,481 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0px 0rem .2rem black;
+  position: fixed;
+  z-index: 200;
+  background-color: white;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+.fa-solid {
+  display: none;
+}
+
+
+.profile-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 15rem 0;
+  background-color: rgb(255, 249, 249);
+}
+
+.main {
+  display: flex;
+  gap: 10rem;
+}
+
+.profile-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42rem;
+  flex-direction: column;
+}
+
+.profileImage {
+  height: 30rem;
+}
+
+.heading {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+.handshake {
+  position: relative;
+  top: 28px;
+  right: 82px;
+}
+
+.social {
+  align-self: self-start;
+}
+
+.about {
+  align-self: center;
+  font-size: 1.9rem;
+  font-weight: lighter;
+}
+
+.social i {
+  color: black;
+  padding: 1rem 2rem 0rem 0rem;
+  font-size: 3rem;
+  margin-top: .5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.skill{
+  display: flex;
+  margin: 6rem auto 0 6rem;
+  align-items: center;
+  justify-content: center;
+}
+.skill h4{
+  font-size: 3rem;
+}
+
+.skill-icon img{
+  height: 4rem;
+  padding: 0 2rem;
+  transition: all .3s ease-in-out;
+}
+
+.about-me{
+  display: flex;
+  /* margin-top: 5rem; */
+  padding: 15rem 5rem 0 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-description{
+  width: 40%;
+  line-height: 2.5rem;
+}
+.about-description h1{
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.about-description p{
+  margin-top: 2rem;
+  line-height: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0px;
+    font-weight: 700;
+  }
+
+  .workspace i {
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  /* Project css */
+  
+  .project-heading{
+    font-size: 5rem;
+  }
+  .project{
+    display: flex;
+    flex-direction: column;
+    padding: 12.3rem 0rem 2rem 0;
+    background-color: rgb(255, 249, 249);
+
+  }
+
+  .project-card{
+    width: 296px;
+    height: auto;
+    box-shadow: 0px 1px 10px rgb(40, 40, 40);
+    border-radius: 1rem;
+  }
+
+  .project-card img{
+    height: 215px;
+    width: 296px;  
+    object-fit:fill;
+
+  }
+  .project-card a{
+   text-decoration: none;
+   text-align: center;
+   font-size: 2rem;
+  }
+  .project-card p{
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .project-card p a{
+    font-size: 1rem;
+  }
+
+  .all-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 5rem 0 5rem ;
+    margin-top: 3rem;
+  }
+  .all-projects .card:first-child(){
+    border: 1px solid red;
+  }
+
+  .musicImage{
+    object-fit: cover;
+    border: 1px solid orange;
+  }
+
+  /* contact css */
+  .contact{
+    margin: 10rem 10rem;
+  }
+  .contact h1{
+    font-size: 3rem;
+    color: rgb(40, 104, 224);
+  }
+  .contact p{
+   font-size: 3rem;
+   font-weight: 900;
+  }
+  .contact div{
+    display: flex;
+    margin-right: 5rem;
+  }
+  .location{
+    margin-top: 5rem;
+    margin-right: 8rem;
+  }
+
+  .location svg{
+    border-radius: 50%;
+    box-shadow: 0px 1px 13px #5237ef;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    color: rgb(40, 104, 224);
+  }
+
+  .span{
+    opacity: 0.8;
+    font-size: 2rem;
+    position: relative;
+    top: -1.5rem;
+  }
+
+
+@media screen and (max-width: 800px) {
+
+  .about-me{
+    flex-direction: column;
+    padding: 8rem 5rem 0 5rem;
+  }
+  .about-description{
+    width: 100%;
+    line-height: 2.5rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+.about-description h1{
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.about-description p{
+  margin-top: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.7;
+  text-align: center;
+}
+
+
+  html {
+    font: 55%;
+  }
+
+  nav {
+    display: block;
+    padding: 1.5rem;
+    top: 0;
+
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  i {
+    cursor: pointer;
+  }
+
+  .fa-solid {
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .fa-circle {
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  .sideBar {
+    transition: all .3s ease-in-out;
+    height: 100%;
+    position: relative;
+    top: 10;
+    background-color: green;
+    padding: 11rem 8rem;
+  }
+
+  .sideBar li {
+    list-style: none;
+    margin-top: 3rem;
+
+
+  }
+
+  .sideBar li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    color: Black;
+
+  }
+
+  
+
+  footer h3{
+    font-size: 1.1rem;
+  }
+
+  .profile-container {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .profileImage {
+    width: 30rem;
+  }
+
+  .profile-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+
+  }
+
+  .profile-description h1 {
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    font-weight: 900;
+    line-height: 3.5rem;
+  }
+
+  .profile-description img {
+    height: 4rem;
+    position: relative;
+    right: 42px;
+
+  }
+
+  .about {
+    color: #555;
+    font-family: Mulish, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 0 1rem;
+    margin: 2rem 0;
+    position: relative;
+    right: 0;
+
+  }
+
+  .social {
+    align-self: center;
+  }
+
+  .social i {
+    color: black;
+    padding: 2rem;
+    font-size: 3rem;
+    margin-top: .5rem;
+  }
+
+  .hand {
+    position: absolute;
+  }
+
+  .skill{
+  margin: 2rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  display: none;
+}
+.skill h4{
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-right: 0rem;
+}
+.skill-icon{
+  padding: 1rem 7rem;
+}
+
+.skill-icon img{
+  height: 4rem;
+  padding: 0rem 0.4rem;
+  transition: all .3s ease-in-out;
+  margin-top: 1rem;
+}
+
+.project {
+  padding: 6rem 0rem 2rem 0;
+}
+
+.location{
+  flex-direction: column;
+  margin-right: 0;
+}
+.contact{
+  margin: 3rem 0;
+  text-align: center;
+}
+.contact p{
+  font-size: 2rem;
+}
+.contact div{
+  flex-direction: column;
+  margin-right: 0;
+
+}
+.location svg{
+  margin: 2rem auto;
+}
+.span{
+  top: 0.5rem;
+}
+
+
+
+
+}
