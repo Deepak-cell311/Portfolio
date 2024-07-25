@@ -1,7 +1,7 @@
 import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
 import Home from "./Components/Home"
-import profile from './assets/Profile.webp'
+import profile from './assets/Profile.png'
 import icons from './assets/icons.webp'
 
 import {
