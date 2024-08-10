@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import PropTypes from 'prop-types';
 import { Link as ScrollLink, Element } from 'react-scroll';
 import Card from "./Card";
+import gearUp from "../assets/gear up car hire.png"
 import educatsy from "../assets/Screenshot_20240722_075341.png"
 import musicPlayer from "../assets/music player.png"
 import aboutImage from "../assets/about-img..png"
@@ -64,6 +65,13 @@ function Home({ image }) {
                          <section className="project" id="project-one">
                               <h1 className="project-heading" align="center">Projects</h1><br />
                               <article className="all-projects">
+                                   <Card
+                                        image={gearUp}
+                                        name="Gear-UP car Hire"
+                                        website="https://gear-up-car-hire.vercel.app/"
+                                        paragraph="A car rental website is an online platform that allows users to rent cars for personal or...."
+                                        readMore = "https://github.com/Deepak-cell311/GearUp-Car-Hire/blob/main/Frontend/README.md"
+                                   />
                                    <Card
                                         image={educatsy}
                                         name="Educatsy"
