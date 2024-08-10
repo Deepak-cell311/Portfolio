@@ -198,6 +198,7 @@ footer {
     height: 215px;
     width: 296px;  
     object-fit:fill;
+    filter: brightness(1.5);
 
   }
   .project-card a{
