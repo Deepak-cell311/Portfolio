@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -12,7 +13,7 @@ body,
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-size: 62.5%;
+  font-size: 62%;
 }
 
 
@@ -52,8 +53,12 @@ nav ul li a {
   font-size: 3rem;
 }
 
-.fa-solid {
+.fa-bars {
   display: none;
+}
+.theme{
+  font-size: x-large;
+  display: fix;
 }
 
 
@@ -75,14 +80,26 @@ nav ul li a {
 
 .profile-description {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   width: 42rem;
   flex-direction: column;
 }
 
 .profileImage {
-  height: 30rem;
+  height: 43rem;
+}
+
+.hero-button{
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-top: 5rem;
+}
+.btn{
+  font-size: 3rem;
+  margin-right: 5rem;
 }
 
 .heading {
@@ -116,7 +133,7 @@ nav ul li a {
 }
 .skill{
   display: flex;
-  margin: 6rem auto 0 6rem;
+  /* margin: 6rem auto 0 6rem; */
   align-items: center;
   justify-content: center;
 }
@@ -190,7 +207,7 @@ footer {
 
   .project-card{
     width: 296px;
-    height: auto;
+    height: 35rem;
     box-shadow: 0px 1px 10px rgb(40, 40, 40);
     border-radius: 1rem;
   }
@@ -199,6 +216,7 @@ footer {
     height: 215px;
     width: 296px;  
     object-fit:fill;
+    filter: brightness(1.5);
 
   }
   .project-card a{
@@ -209,6 +227,7 @@ footer {
   .project-card p{
     font-weight: 900;
     font-size: 1.5rem;
+    color: black;
   }
   .project-card p a{
     font-size: 1rem;
@@ -269,6 +288,39 @@ footer {
     top: -1.5rem;
   }
 
+  body.dark-mode {
+    background-color: #000000;
+    color: black;
+  }
+
+.dark-mode nav {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .sideBar {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .text-para{
+  color: white;
+}
+.dark-mode .text-para-project{
+  background-color: white;
+}
+
+.dark-mode .hero{
+  background-color: black;
+  color: White;
+}
+
+.dark-mode .social i{
+  color: #0073ff;
+}
+
+
+  
 
 @media screen and (max-width: 998px) {
 
@@ -310,8 +362,9 @@ footer {
   }
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
+  
 
   nav ul {
     display: none;
@@ -333,11 +386,14 @@ footer {
   }
 
   .sideBar {
-    transition: all .3s ease-in-out;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     height: 100%;
-    position: relative;
-    top: 10;
-    padding: 11rem 8rem;
+    top: 6rem;
+    text-align: center;
+    font-size: 12rem;
+    background-color: white;
   }
 
   .sideBar li {
@@ -366,6 +422,7 @@ footer {
     margin-top: 1rem;
     text-align: center;
     padding-bottom: 1rem;
+    padding-top: 6rem;
   }
 
   .main {
@@ -373,7 +430,7 @@ footer {
   }
 
   .profileImage {
-    width: 30rem;
+    height: 32rem;
   }
 
   .profile-description {
@@ -383,6 +440,13 @@ footer {
     margin-top: 2rem;
     width: 100%;
 
+  }
+  .hero-button{
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 3.4rem;
+    margin-left: 3.1rem;
   }
 
   .profile-description h1 {

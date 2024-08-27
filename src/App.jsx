@@ -7,15 +7,18 @@ import icons from './assets/icons.webp'
 import {
   BrowserRouter,
 } from "react-router-dom";
+import { ThemeProvider } from "./context/darkmode"
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-          <Home image = {[profile, icons]}/>   
-        <Footer />
-      </BrowserRouter>
+      <ThemeProvider>
+        <BrowserRouter>
+          <Navbar />
+            <Home image = {[profile, icons]}/>   
+          <Footer />
+          </BrowserRouter>
+      </ThemeProvider>
     </>
 
   )
