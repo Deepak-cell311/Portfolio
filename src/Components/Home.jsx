@@ -79,7 +79,7 @@ function Home({ image }) {
                                         website="https://gear-up-car-hire.vercel.app/"
                                         paragraph="A car rental website is an online platform that allows users to rent cars for personal or....."
                                         readMore="https://github.com/Deepak-cell311/GearUp-Car-Hire/blob/main/Frontend/README.md"
-                                        description = {}
+                                        
                                    />
                                    <Card
                                         image={gearUp}
