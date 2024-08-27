@@ -9,7 +9,7 @@ const Card = ({image, name, website, paragraph, readMore, className}) => {
                     <img className={className} src={image} alt={name} />
                     <h1 align="center"><a href={website} target='_blank'>{name}</a></h1>
                     {/* <p align="center">{paragraph} <a href={readMore} target='_blank'>read more</a></p> */}
-                    <p align="center">{paragraph} <a href={readMore} target={}>read more</a></p>
+                    <p align="center">{paragraph} <a href={readMore}>read more</a></p>
                </article>
           </>
      )
