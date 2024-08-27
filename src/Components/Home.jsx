@@ -73,14 +73,7 @@ function Home({ image }) {
                          <section className="project hero" id="project-one">
                               <h1 className="project-heading" align="center">Projects</h1><br />
                               <article className="all-projects sidebar">
-                                   <Card
-                                        image={gearUp}
-                                        name="Gear-UP car Hire"
-                                        website="https://gear-up-car-hire.vercel.app/"
-                                        paragraph="A car rental website is an online platform that allows users to rent cars for personal or....."
-                                        readMore="https://github.com/Deepak-cell311/GearUp-Car-Hire/blob/main/Frontend/README.md"
-                                        
-                                   />
+                              
                                    <Card
                                         image={gearUp}
                                         name="Gear-UP car Hire"
